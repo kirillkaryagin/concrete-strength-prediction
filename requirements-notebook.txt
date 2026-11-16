@@ -1,0 +1,6 @@
+-r requirements.txt
+matplotlib==3.10.3
+notebook==7.4.3
+nbclient==0.10.2
+ipykernel==6.29.5
+xlrd==2.0.2

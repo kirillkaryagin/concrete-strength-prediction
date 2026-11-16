@@ -1,0 +1,10 @@
+{
+  "cement": 300.0,
+  "slag": 100.0,
+  "fly_ash": 0.0,
+  "water": 180.0,
+  "superplasticizer": 5.0,
+  "coarse_aggregate": 1000.0,
+  "fine_aggregate": 800.0,
+  "age": 28
+}

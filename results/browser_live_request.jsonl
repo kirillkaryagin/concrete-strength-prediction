@@ -1,0 +1,1 @@
+{"upstream": "http://127.0.0.1:19697/predict", "request": {"cement": 300.0, "slag": 100.0, "fly_ash": 0.0, "water": 180.0, "superplasticizer": 5.0, "coarse_aggregate": 1000.0, "fine_aggregate": 800.0, "age": 28}, "status": 200, "response": {"educational_use_only": true, "model": "random_forest", "strength_mpa": 39.83191104928001, "unit": "MPa", "warnings": []}}

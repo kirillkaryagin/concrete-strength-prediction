@@ -1,0 +1,5 @@
+*
+!requirements.txt
+!predict.py
+!serve.py
+!model.pkl

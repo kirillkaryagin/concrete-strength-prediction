@@ -1,0 +1,181 @@
+{
+  "started_utc": "2026-11-16T18:34:30.505443+00:00",
+  "finished_utc": "2026-11-16T18:35:27.761495+00:00",
+  "source_url": "https://github.com/kirillkaryagin/concrete-strength-prediction.git",
+  "fresh_git_clone": true,
+  "clean_clone_before_checks": true,
+  "new_python_venv": true,
+  "python": "3.12.13",
+  "installation": "python -m pip install -r requirements.txt, then -r requirements-notebook.txt",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "Flask": "3.1.2",
+    "waitress": "3.0.2",
+    "matplotlib": "3.10.3",
+    "notebook": "7.4.3",
+    "ipykernel": "6.29.5",
+    "nbclient": "0.10.2"
+  },
+  "manifest_entries_verified": 41,
+  "notebook_code_cells_executed": 12,
+  "notebook_png_outputs": 5,
+  "notebook_selection_matches_published": true,
+  "notebook_test_predictions_match_published_exactly": true,
+  "cli_train_predictions_match_published_exactly": true,
+  "test_metrics": {
+    "rmse_mpa": 6.649554296205217,
+    "mae_mpa": 4.6322607914044465,
+    "r2": 0.8629619408933229
+  },
+  "http": {
+    "health": {
+      "model": "random_forest",
+      "status": "ok",
+      "unit": "MPa"
+    },
+    "prediction": {
+      "educational_use_only": true,
+      "model": "random_forest",
+      "strength_mpa": 39.83191104928001,
+      "unit": "MPa",
+      "warnings": []
+    },
+    "checks": [
+      {
+        "path": "/health",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 415,
+        "status": 415
+      },
+      {
+        "path": "/predict",
+        "expected_status": 413,
+        "status": 413
+      },
+      {
+        "path": "/missing",
+        "expected_status": 404,
+        "status": 404
+      }
+    ]
+  },
+  "api_stopped": true,
+  "tracked_clone_outputs_restored_after_verification": true,
+  "source_file_sha256": {
+    "predict.py": "744a472e9ed637fbb46b44bdc7850bbc9d6d71e976b9be1244c7e08dbec9d6ee",
+    "serve.py": "785fab76f818e9dc32082652ea12a22d4eeaf4bc0f0ac747bc82e8debbfbb963",
+    "download_data.py": "b2556f989937ad43b216816ec0dcb58ff07cbaf8dee270cf6e88e8040b59315e",
+    "train.py": "52ecb54955b61778a4c649bba1303af490d1c156b865494745b5900531631fed",
+    "project.py": "af52063bd7a4b444daf5a41d2b9d1b2e70a2b076a5807a337c57a2ad0ceb98a1",
+    "smoke_check.py": "6dd1ea045ec62efe5149b3c876f05988b74eeed47d32043e76cdd1291f8d1907",
+    "Dockerfile": "ee1b8e7f72644945e10f1e6e409c119d458a656bb7be44a26df4bb82c9d6580e",
+    "requirements.txt": "cdeda9041f9521a08483697c749d7c8b6d0493127ac508bc918fbe97f9e26e15",
+    "requirements-notebook.txt": "c72f555fa35583acb48204e5cbe18a01ae5e7014311f201bb28d5a3f5b3adf82",
+    "model.pkl": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e"
+  },
+  "temporary_environment_removed": true,
+  "dataset_download_script_verified": true,
+  "browser_live_request": {
+    "upstream": "http://127.0.0.1:19697/predict",
+    "request": {
+      "cement": 300.0,
+      "slag": 100.0,
+      "fly_ash": 0.0,
+      "water": 180.0,
+      "superplasticizer": 5.0,
+      "coarse_aggregate": 1000.0,
+      "fine_aggregate": 800.0,
+      "age": 28
+    },
+    "status": 200,
+    "response": {
+      "educational_use_only": true,
+      "model": "random_forest",
+      "strength_mpa": 39.83191104928001,
+      "unit": "MPa",
+      "warnings": []
+    }
+  },
+  "browser_screenshot": "results/container_request_screenshot.jpg",
+  "browser_screenshot_sha256": "4f5461b96f5e65b7f8b75a9143c12a19a33fdf9b2245e4195e9fe0f4200c3510",
+  "demo_client_and_tunnel_stopped": true,
+  "pip_check": {
+    "exit_code": 0,
+    "output": "No broken requirements found."
+  },
+  "demo_client_focused_check": {
+    "valid_request_http_status": 200,
+    "malformed_json_with_log_http_status": 400,
+    "tested_against_real_api": true,
+    "servers_stopped_after_check": true
+  },
+  "temporary_clone_removed": true,
+  "cleanup_utc": "2026-11-16T18:44:10.263552+00:00",
+  "server_final_cleanup": {
+    "staging_removed": true,
+    "task_bridge_removed": true,
+    "remaining_task_daemons": 0,
+    "baseline_containers_preserved": true,
+    "root_free_bytes": 5200908288,
+    "memory": {
+      "MemAvailable": "10220172 kB",
+      "SwapTotal": "8388600 kB",
+      "SwapFree": "3841640 kB"
+    },
+    "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1029806135\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=961582250",
+    "failed_units": []
+  },
+  "source_identity": "source_file_sha256"
+}

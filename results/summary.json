@@ -1,0 +1,25 @@
+{
+  "task": "concrete_strength_regression",
+  "selected_model": "random_forest",
+  "selected_params": {
+    "max_depth": null,
+    "min_samples_leaf": 1
+  },
+  "test": {
+    "rmse_mpa": 6.649554296205217,
+    "mae_mpa": 4.6322607914044465,
+    "r2": 0.8629619408933229
+  },
+  "mean_baseline_test": {
+    "rmse_mpa": 18.016431054057758,
+    "mae_mpa": 14.476311461428885,
+    "r2": -0.005989977673658942
+  },
+  "example_prediction_mpa": 39.83191104928001,
+  "notebook": {
+    "executed_code_cells": 12,
+    "embedded_plots": 5
+  },
+  "local_http_checks": 13,
+  "docker_http_checks": 13
+}

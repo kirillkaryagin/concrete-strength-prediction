@@ -1,0 +1,102 @@
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 612B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 93B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 10.80MB 0.1s done
+#4 DONE 0.2s
+
+#5 [1/5] FROM docker.io/library/python:3.12-slim-bookworm
+#5 DONE 0.1s
+
+#6 [2/5] WORKDIR /app
+#6 DONE 0.3s
+
+#7 [3/5] COPY requirements.txt ./
+#7 DONE 0.0s
+
+#8 [4/5] RUN pip install --no-cache-dir -r requirements.txt     && useradd --uid 10001 --create-home appuser
+#8 14.24 Collecting numpy==2.2.6 (from -r requirements.txt (line 1))
+#8 26.69   Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+#8 26.93 Collecting pandas==2.2.3 (from -r requirements.txt (line 2))
+#8 26.94   Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+#8 27.15 Collecting scipy==1.15.3 (from -r requirements.txt (line 3))
+#8 27.16   Downloading scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+#8 27.29 Collecting scikit-learn==1.7.2 (from -r requirements.txt (line 4))
+#8 27.30   Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+#8 27.33 Collecting Flask==3.1.2 (from -r requirements.txt (line 5))
+#8 27.34   Downloading flask-3.1.2-py3-none-any.whl.metadata (3.2 kB)
+#8 27.37 Collecting waitress==3.0.2 (from -r requirements.txt (line 6))
+#8 27.38   Downloading waitress-3.0.2-py3-none-any.whl.metadata (5.8 kB)
+#8 27.43 Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 2))
+#8 27.44   Downloading python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+#8 27.52 Collecting pytz>=2020.1 (from pandas==2.2.3->-r requirements.txt (line 2))
+#8 27.52   Downloading pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+#8 27.55 Collecting tzdata>=2022.7 (from pandas==2.2.3->-r requirements.txt (line 2))
+#8 27.56   Downloading tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+#8 27.65 Collecting joblib>=1.2.0 (from scikit-learn==1.7.2->-r requirements.txt (line 4))
+#8 27.66   Downloading joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+#8 27.68 Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.7.2->-r requirements.txt (line 4))
+#8 27.69   Downloading threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+#8 27.72 Collecting blinker>=1.9.0 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.73   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+#8 27.77 Collecting click>=8.1.3 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.78   Downloading click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+#8 27.80 Collecting itsdangerous>=2.2.0 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.81   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+#8 27.83 Collecting jinja2>=3.1.2 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.84   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+#8 27.90 Collecting markupsafe>=2.1.1 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.91   Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+#8 27.94 Collecting werkzeug>=3.1.0 (from Flask==3.1.2->-r requirements.txt (line 5))
+#8 27.94   Downloading werkzeug-3.1.9-py3-none-any.whl.metadata (4.1 kB)
+#8 27.97 Collecting cloudpickle>=3.0 (from joblib>=1.2.0->scikit-learn==1.7.2->-r requirements.txt (line 4))
+#8 27.98   Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+#8 28.00 Downloading numpy-2.2.6-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.5 MB)
+#8 28.34    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.5/16.5 MB 52.4 MB/s eta 0:00:00
+#8 28.36 Downloading pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+#8 28.44    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.7/12.7 MB 160.9 MB/s eta 0:00:00
+#8 28.45 Downloading scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.3 MB)
+#8 28.57    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 37.3/37.3 MB 326.7 MB/s eta 0:00:00
+#8 28.59 Downloading scikit_learn-1.7.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.5 MB)
+#8 28.63    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 224.8 MB/s eta 0:00:00
+#8 28.64 Downloading flask-3.1.2-py3-none-any.whl (103 kB)
+#8 28.65 Downloading waitress-3.0.2-py3-none-any.whl (56 kB)
+#8 28.66 Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+#8 28.67 Downloading click-8.5.1-py3-none-any.whl (126 kB)
+#8 28.69 Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+#8 28.70 Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+#8 28.71 Downloading joblib-1.6.0-py3-none-any.whl (306 kB)
+#8 28.72 Downloading markupsafe-3.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+#8 28.73 Downloading python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+#8 28.74 Downloading pytz-2026.6-py2.py3-none-any.whl (506 kB)
+#8 28.75 Downloading threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+#8 28.77 Downloading tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+#8 28.78 Downloading werkzeug-3.1.9-py3-none-any.whl (228 kB)
+#8 28.79 Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+#8 29.02 Installing collected packages: pytz, waitress, tzdata, threadpoolctl, numpy, markupsafe, itsdangerous, cloudpickle, click, blinker, werkzeug, scipy, python-dateutil, joblib, jinja2, scikit-learn, pandas, Flask
+#8 43.19 Successfully installed Flask-3.1.2 blinker-1.9.0 click-8.5.1 cloudpickle-3.1.2 itsdangerous-2.2.0 jinja2-3.1.6 joblib-1.6.0 markupsafe-3.0.4 numpy-2.2.6 pandas-2.2.3 python-dateutil-4.0.0 pytz-2026.6 scikit-learn-1.7.2 scipy-1.15.3 threadpoolctl-3.8.0 tzdata-2026.6 waitress-3.0.2 werkzeug-3.1.9
+#8 43.19 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+#8 55.74 
+#8 55.74 [notice] A new release of pip is available: 25.0.1 -> 26.3
+#8 55.74 [notice] To update, run: pip install --upgrade pip
+#8 DONE 56.2s
+
+#9 [5/5] COPY predict.py serve.py model.pkl ./
+#9 DONE 0.1s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 3.1s done
+#10 writing image sha256:ab87048c4b420ca816b0cc5778b24a97ff3760f32d3be780b92af3ac54415d9b done
+#10 naming to docker.io/library/[temporary image tag omitted] done
+#10 DONE 3.1s

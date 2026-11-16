@@ -1,0 +1,15 @@
+{
+  "selected_model": "random_forest",
+  "selected_params": {
+    "max_depth": null,
+    "min_samples_leaf": 1
+  },
+  "selection_rule": "Lowest validation RMSE among models tuned using 5-fold GroupKFold on training only.",
+  "baseline_validation": {
+    "rmse_mpa": 14.703176097808646,
+    "mae_mpa": 12.143407536388418,
+    "r2": -0.00509033198012121
+  },
+  "seed": 42,
+  "validation_rmse_mpa": 6.135405857468285
+}

@@ -1,0 +1,89 @@
+{
+  "selected_model": "random_forest",
+  "selected_params": {
+    "max_depth": null,
+    "min_samples_leaf": 1
+  },
+  "features": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age"
+  ],
+  "target": "strength_mpa",
+  "unit": "MPa",
+  "seed": 42,
+  "python": "3.12.13",
+  "packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2"
+  },
+  "data_sha256": "3c6675209cd07c5de59ffcdf33f0044b777e6387af8de8a17813b0aee10a021e",
+  "selection_sha256": "452ac312ac53386f41fc0ba1b8971ae2698e4299858dd0efaad2097897a971bb",
+  "training_ranges": {
+    "cement": {
+      "min": 108.3,
+      "max": 540.0
+    },
+    "slag": {
+      "min": 0.0,
+      "max": 359.4
+    },
+    "fly_ash": {
+      "min": 0.0,
+      "max": 200.1
+    },
+    "water": {
+      "min": 121.75,
+      "max": 246.9
+    },
+    "superplasticizer": {
+      "min": 0.0,
+      "max": 32.2
+    },
+    "coarse_aggregate": {
+      "min": 801.0,
+      "max": 1125.0
+    },
+    "fine_aggregate": {
+      "min": 594.0,
+      "max": 992.6
+    },
+    "age": {
+      "min": 1.0,
+      "max": 365.0
+    }
+  },
+  "test_metrics": {
+    "rmse_mpa": 6.649554296205217,
+    "mae_mpa": 4.6322607914044465,
+    "r2": 0.8629619408933229
+  },
+  "created_utc": "2026-11-16T17:54:43.322211+00:00",
+  "model_sha256": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+  "clean_rows": 1005,
+  "recipe_groups": 428,
+  "split_rows": {
+    "train": 595,
+    "validation": 204,
+    "test": 206
+  },
+  "split_recipe_groups": {
+    "train": 256,
+    "validation": 86,
+    "test": 86
+  },
+  "recipe_overlap": 0,
+  "refit_rows": 799,
+  "baseline_test": {
+    "rmse_mpa": 18.016431054057758,
+    "mae_mpa": 14.476311461428885,
+    "r2": -0.005989977673658942
+  }
+}

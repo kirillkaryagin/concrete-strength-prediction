@@ -1,0 +1,140 @@
+{
+  "started_utc": "2026-11-16T18:00:36.997540+00:00",
+  "status": "passed",
+  "exposure": "container loopback only; network none",
+  "isolated_daemon": true,
+  "context_file_sha256": {
+    "Dockerfile": "ee1b8e7f72644945e10f1e6e409c119d458a656bb7be44a26df4bb82c9d6580e",
+    "requirements.txt": "cdeda9041f9521a08483697c749d7c8b6d0493127ac508bc918fbe97f9e26e15",
+    "predict.py": "744a472e9ed637fbb46b44bdc7850bbc9d6d71e976b9be1244c7e08dbec9d6ee",
+    "serve.py": "785fab76f818e9dc32082652ea12a22d4eeaf4bc0f0ac747bc82e8debbfbb963",
+    "model.pkl": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+    "smoke_check.py": "6dd1ea045ec62efe5149b3c876f05988b74eeed47d32043e76cdd1291f8d1907",
+    "sample_request.json": "5479116f71cb81d0a874e42cef4dc960fb0385466b9c3135ada89580d25816b6"
+},
+  "cleanup": {
+    "isolated_daemon_stopped": true,
+    "isolated_data_removed": true
+  },
+  "initial_free_root_bytes": 5198028800,
+  "docker_version": "29.7.2",
+  "base_image": [
+    "python@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df"
+  ],
+  "build_exit_code": 0,
+  "image_id": "sha256:ab87048c4b420ca816b0cc5778b24a97ff3760f32d3be780b92af3ac54415d9b",
+  "image_size_bytes": 476302734,
+  "image_user": "appuser",
+  "image_cmd": [
+    "python",
+    "serve.py",
+    "--host",
+    "0.0.0.0",
+    "--port",
+    "9696"
+  ],
+  "http": {
+    "health": {
+      "model": "random_forest",
+      "status": "ok",
+      "unit": "MPa"
+    },
+    "prediction": {
+      "educational_use_only": true,
+      "model": "random_forest",
+      "strength_mpa": 39.83191104928001,
+      "unit": "MPa",
+      "warnings": []
+    },
+    "checks": [
+      {
+        "path": "/health",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 415,
+        "status": 415
+      },
+      {
+        "path": "/predict",
+        "expected_status": 413,
+        "status": 413
+      },
+      {
+        "path": "/missing",
+        "expected_status": 404,
+        "status": 404
+      }
+    ]
+  },
+  "model_sha256": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+  "python": "3.12.16",
+  "runtime_packages": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "Flask": "3.1.2",
+    "waitress": "3.0.2"
+  },
+  "dockerfile_healthcheck_command_exit_code": 0,
+  "container_id": "bf1b1bca71b38afe5862fcac5a09cb976643d72a256f2b7f556cad3b536e7419",
+  "runtime_network_mode": "none",
+  "readonly_rootfs": true,
+  "actual_uid": "10001",
+  "minimum_observed_free_root_bytes": 4663382016,
+  "existing_containers_unchanged": true,
+  "final_free_root_bytes": 5197950976,
+  "failed_units_after": [],
+  "finished_utc": "2026-11-16T18:01:55.488702+00:00",
+  "existing_container_count_before": 4,
+  "existing_container_count_after": 4,
+  "local_and_container_prediction_match": true
+}

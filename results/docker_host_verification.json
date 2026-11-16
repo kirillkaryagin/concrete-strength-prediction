@@ -1,0 +1,115 @@
+{
+  "started_utc": "2026-11-16T18:35:05.878449+00:00",
+  "status": "passed",
+  "host_bind": "127.0.0.1:19696",
+  "container_port": 9696,
+  "isolated_daemon": true,
+  "cleanup": {
+    "daemon_stopped": true,
+    "isolated_data_removed": true,
+    "bridge_removed": true
+  },
+  "model_sha256": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+  "build_exit_code": 0,
+  "image_id": "sha256:4f6e4f65d333ed655398d937b11d78fbe26493cec07a830e9e43750304eaa781",
+  "image_size_bytes": 476302734,
+  "http": {
+    "health": {
+      "model": "random_forest",
+      "status": "ok",
+      "unit": "MPa"
+    },
+    "prediction": {
+      "educational_use_only": true,
+      "model": "random_forest",
+      "strength_mpa": 39.83191104928001,
+      "unit": "MPa",
+      "warnings": []
+    },
+    "checks": [
+      {
+        "path": "/health",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 200,
+        "status": 200
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 400,
+        "status": 400
+      },
+      {
+        "path": "/predict",
+        "expected_status": 415,
+        "status": 415
+      },
+      {
+        "path": "/predict",
+        "expected_status": 413,
+        "status": 413
+      },
+      {
+        "path": "/missing",
+        "expected_status": 404,
+        "status": 404
+      }
+    ]
+  },
+  "curl_request_response": "HTTP/1.1 200 OK\nContent-Length: 114\nContent-Type: application/json\nDate: Mon, 16 Nov 2026 18:36:16 GMT\nServer: waitress\n\n{\"educational_use_only\":true,\"model\":\"random_forest\",\"strength_mpa\":39.83191104928001,\"unit\":\"MPa\",\"warnings\":[]}\n",
+  "port_bindings": {
+    "9696/tcp": [
+      {
+        "HostIp": "127.0.0.1",
+        "HostPort": "19696"
+      }
+    ]
+  },
+  "container_id": "ad4849e5f16dee864244ade4ed3eb4bb2832a094abeb01cf5b1e5ac81f35244c",
+  "actual_uid": "10001",
+  "container_model_sha256": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+  "baseline_containers_unchanged": true,
+  "finished_utc": "2026-11-16T18:37:44.721781+00:00",
+  "omitted_metadata": [
+    "Temporary network name"
+  ],
+  "source_checksums_report": "fresh_clone_verification.json"
+}

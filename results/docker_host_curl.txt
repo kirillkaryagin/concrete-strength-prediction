@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Content-Length: 114
+Content-Type: application/json
+Date: Mon, 16 Nov 2026 18:36:16 GMT
+Server: waitress
+
+{"educational_use_only":true,"model":"random_forest","strength_mpa":39.83191104928001,"unit":"MPa","warnings":[]}

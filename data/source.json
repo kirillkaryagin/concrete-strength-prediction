@@ -1,0 +1,37 @@
+{
+  "title": "Concrete Compressive Strength",
+  "creator": "I-Cheng Yeh",
+  "citation": "Yeh, I. (1998). Concrete Compressive Strength. UCI Machine Learning Repository.",
+  "doi": "https://doi.org/10.24432/C5PK67",
+  "source_page": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+  "download_url": "https://archive.ics.uci.edu/static/public/165/concrete+compressive+strength.zip",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "archive_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+  "raw_xls_sha256": "710076c66b9ca3f8050e7942f3dcbdbe04013534daeb0077ffd3079a52d8e0c4",
+  "normalized_csv_sha256": "3c6675209cd07c5de59ffcdf33f0044b777e6387af8de8a17813b0aee10a021e",
+  "original_rows": 1030,
+  "original_columns": [
+    "Cement (component 1)(kg in a m^3 mixture)",
+    "Blast Furnace Slag (component 2)(kg in a m^3 mixture)",
+    "Fly Ash (component 3)(kg in a m^3 mixture)",
+    "Water  (component 4)(kg in a m^3 mixture)",
+    "Superplasticizer (component 5)(kg in a m^3 mixture)",
+    "Coarse Aggregate  (component 6)(kg in a m^3 mixture)",
+    "Fine Aggregate (component 7)(kg in a m^3 mixture)",
+    "Age (day)",
+    "Concrete compressive strength(MPa, megapascals) "
+  ],
+  "normalized_columns": [
+    "cement",
+    "slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age",
+    "strength_mpa"
+  ],
+  "transformation": "Read the first XLS sheet with xlrd, rename columns by original order, write UTF-8 CSV. No rows removed in this file. Training removes exact duplicate rows."
+}

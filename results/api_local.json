@@ -1,0 +1,89 @@
+{
+  "health": {
+    "model": "random_forest",
+    "status": "ok",
+    "unit": "MPa"
+  },
+  "prediction": {
+    "educational_use_only": true,
+    "model": "random_forest",
+    "strength_mpa": 39.83191104928001,
+    "unit": "MPa",
+    "warnings": []
+  },
+  "checks": [
+    {
+      "path": "/health",
+      "expected_status": 200,
+      "status": 200
+    },
+    {
+      "path": "/predict",
+      "expected_status": 200,
+      "status": 200
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 400,
+      "status": 400
+    },
+    {
+      "path": "/predict",
+      "expected_status": 415,
+      "status": 415
+    },
+    {
+      "path": "/predict",
+      "expected_status": 413,
+      "status": 413
+    },
+    {
+      "path": "/missing",
+      "expected_status": 404,
+      "status": 404
+    }
+  ],
+  "transport": "real HTTP over localhost",
+  "host": "127.0.0.1",
+  "port": 61441,
+  "started_utc": "2026-11-16T17:56:51.236975+00:00",
+  "model_sha256": "2a2a07479409fcd620529543d63b0e3c2fcd9672c3983a933cc6286b828d279e",
+  "server": "Waitress",
+  "command": "python serve.py --host 127.0.0.1 --port <temporary-port>",
+  "service_stopped": true
+}
